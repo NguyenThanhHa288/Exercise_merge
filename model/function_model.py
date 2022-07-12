@@ -5,7 +5,6 @@ from sklearn.impute import SimpleImputer
 def miss_value(object):
     sim = SimpleImputer(missing_values=np.nan, strategy='mean')
     imputed_data_X = sim.fit_transform(object)
-    m=1
     return imputed_data_X
 
 
